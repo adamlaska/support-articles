@@ -1,0 +1,9 @@
+<h2 id="h_01HN3ABRQEFZTXVXR4JM1FZRHZ">Experiencing Issues Finding Branches in the Dropdown?</h2>
+<p>If you encounter difficulties when attempting to filter your project's pipelines for a specific branch, and the branch name seems missing from the dropdown, this documentation provides explanations and solutions.</p>
+<p>This issue tends to occur when the branch you are searching for previously had an open pull request, which was later merged with another branch.</p>
+<p>After a pull request is initiated on a branch, the branch name surfaces in the branch filtering dropdown upon the triggering of the inaugural build. The branch name remains in the dropdown while the pull request is open. However, upon the merger of this pull request with another branch, the original branch's name disappears from the dropdown, despite its existence on the VCS (GitHub, BitBucket, etc.). However, you can still observe the branch's builds on your dashboard.</p>
+<h2 id="h_01HN3ABZC6N6VDJ3DB8T7ZR8HB">How to Resolve Branch Visibility Issue</h2>
+<p>1. <strong>Navigate through Past Pipelines:</strong> Click the branch name in a past pipeline. This action will lead you to the branch view, where you can see all pipelines run on this specific branch.</p>
+<p>2. <strong>Modify your Project’s URL:</strong> Access the branch view by appending <code>?branch=[branch_name]</code> to your project's URL on CircleCI.</p>
+<p>3. <strong>Trigger Pipeline or Add Commit:</strong> Get the branch name to show up in the dropdown again by either pushing a new commit to the branch or manually initiating a pipeline from the branch view.</p>
+<p data-renderer-start-pos="8137"> </p>

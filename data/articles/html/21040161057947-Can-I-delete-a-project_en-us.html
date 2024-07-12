@@ -1,0 +1,36 @@
+<h1 id="h_01HH3AMV4EWY27A863TA2PVPMA">Project Deletion</h1>
+<p>Per our data retention policy, depending on your plan, we retain build data for the following periods :</p>
+<ul>
+    <li>Free Plans: 90 days</li>
+    <li>Performance and Custom Plans: 180 days</li>
+    <li>Scale Plans: 2 years</li>
+</ul>
+<p>You can also set custom data retention periods for artifacts, workspaces and cache items by navigating to the Usage Controls in the Plan portal:</p>
+<p>https://app.circleci.com/settings/plan/<em>vcs</em>/<em>organisation</em>/usage-controls</p>
+<p>If you need a project deleted sooner than our policy outlines, please follow this guide. At this time, project deletion requests are completed by submitting a ticket via our <a href="https://support.circleci.com/">Support Portal</a>. Deleting a project will remove the complete build history. </p>
+<h2 id="h_01HH3AMV4E0Y07H2DH0VKG3K45">Prerequisites</h2>
+<p>To find out if you authorized through the GitHub OAuth app or the CircleCI GitHub App, see the <a class="css-x7gnkn" href="https://circleci.com/docs/github-apps-integration/" data-testid="link">GitHub App integration</a> page.</p>
+<h3 id="github_oauth">GitHub OAuth</h3>
+<p>Make sure that all webhooks for your project are removed in GitHub. This <a href="https://support.circleci.com/hc/en-us/articles/360021666393-How-to-stop-building-by-manually-removing-the-CircleCI-webhook-and-deploy-key-from-your-GitHub-repository">Support Article</a> describes the necessary steps. </p>
+<h3 id="github_app">GitHub App</h3>
+<p>For GitHub App you will need to do the following:</p>
+<ol class="p-rich_text_list p-rich_text_list__ordered" data-stringify-type="ordered-list" data-indent="0" data-border="0">
+    <li data-stringify-indent="0" data-stringify-border="0">Navigate to your Project Settings page in the project you wish to delete on CircleCI.</li>
+    <li data-stringify-indent="0" data-stringify-border="0">Click on "Configuration" and delete all your configurations.</li>
+    <li data-stringify-indent="0" data-stringify-border="0">Click on "Triggers" and delete all of your triggers.</li>
+</ol>
+<p>Once this is done, please provide a CircleCI link to your project to CircleCI Support.</p>
+<h3 id="gitlab">GitLab</h3>
+<p><strong>Note: The order is important for the following actions</strong></p>
+<p>1. Delete the <strong>triggers</strong> in your project settings</p>
+<p>2. Delete the <strong>configuration</strong> in your project settings </p>
+<h2 id="h_01HH3AMV4E78XT9EQXY2E0RCMT">Submitting a Support Ticket</h2>
+<p>Project deletion requests must be submitted or approved by an Organization Admin. Use <a href="https://support.circleci.com/hc/en-us/articles/12154694676507-How-do-I-find-my-org-admins-">this guide</a> if you are having trouble identifying an org admin.</p>
+<p>You may be asked to provide the project ID of the project you wish to have deleted. You can find that ID in your Project Settings.</p>
+<p>Once we receive your ticket, please expect our Support Engineers to confirm the request. </p>
+<h2 id="h_01HH3AMV4F8JXKX186HN9YPGDV">Additional Resources<span class="diff-added-string">: </span>
+</h2>
+<ul>
+    <li><a href="https://support.circleci.com/hc/en-us/articles/360021666393-How-to-stop-building-by-manually-removing-the-CircleCI-webhook-and-deploy-key-from-your-GitHub-repository" target="_blank" rel="noopener noreferrer">How to stop building by manually removing the CircleCI webhook and deploy key from your GitHub repository</a></li>
+    <li><a href="https://support.circleci.com/hc/en-us/articles/360036286553-Can-I-delete-a-specific-build-" target="_blank" rel="noopener noreferrer">Can I delete a specific build?</a></li>
+</ul>
